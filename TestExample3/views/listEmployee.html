@@ -1,0 +1,42 @@
+<div>
+    <div class="container-fluid p-lg-5">
+        <div class="card">
+            <div class="card-header  bg-primary">
+                <h4 class="text-white">DANH SACH NHAN VIEN</h4>
+            </div>
+
+            <body>
+                <a href="#!/employee/add" class="p-3">
+                    <button class="btn btn-success ">++Thêm employee</button>
+                </a>
+                <table class="table table-bordered">
+                    <tr>
+                        <th>mã</th>
+                        <th>Họ và tên</th>
+                        <th>Số điện thoại</th>
+                        <th>Chức vụ</th>
+                        <th>Ngày sinh</th>
+
+
+                    </tr>
+                    <tr ng-repeat="list in listEmployee">
+                        <td>{{list.ma}}</td>
+                        <td>{{list.ho_ten}}</td>
+                        <td>{{list.sdt}}</td>
+                        <td>{{list.chuc_vu}}</td>
+                        <td>{{list.ngay_sinh|date: "dd/MM/yyyy"}}</td>
+                        <td>
+                            <a href="#!/detail/employee/{{list.id}}">
+                                <button class="btn btn-primary">Chi tiết</button>
+                            </a>
+                            <button ng-click="deleteEmployee(list.id)" class="btn btn-danger">Xóa</button>
+                        </td>
+                    </tr>
+
+                </table>
+            </body>
+
+
+        </div>
+    </div>
+</div>

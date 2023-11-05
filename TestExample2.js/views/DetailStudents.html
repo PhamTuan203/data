@@ -1,0 +1,34 @@
+<div class="container p-5">
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h4 class="text-white">Detail Students</h4>
+        </div>
+
+        <body>
+            <form class="p-2" name="formCheck">
+                <label class="fw-bold">Name</label>
+                <input type="text" class="form-control" name="name" ng-model="newStudents.name" required disabled>
+
+
+
+                <label class="fw-bold" for="">Year</label>
+                <input type="text" class="form-control" name="year" ng-model="newStudents.year" required disabled>
+
+
+                <label class="fw-bold" for="">Couse</label>
+                <input type="text" class="form-control" name="couse" ng-model="newStudents.couse" required disabled>
+
+
+                <div class="text-center p-3">
+                    <a href="#!/trang-chu">
+                        <button class="btn btn-outline-danger">Back</button>
+                    </a>
+                    <a href="#!/update/students/{{newStudents.id}}"><button class="btn btn-success">Update</button>
+                    </a>
+                </div>
+            </form>
+        </body>
+
+
+    </div>
+</div>

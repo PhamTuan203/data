@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angularjs</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="js/buoi5.js"></script>
+</head>
+
+
+<!--để khởi tạo một chương trình đầu tiên chúng ta cần định nghĩa vùng sử dụng agl-js-->
+<!--ng-app dùng để định nghĩa vùng sử dụng-->
+
+<body ng-app="Angularjs">
+
+
+
+
+    <div ng-controller="demoController">
+        <h1>{{xinchao}}</h1>
+
+    </div>
+    <div ng-controller="demoController2">
+        <h2>{{ten}}</h2>
+        <h2>{{namsinh}}</h2>
+        <!--cách hiển thị thứ 2-->
+        <h2 ng-bind="chuyennganh"></h2>
+
+        <table border="1">
+            <tr>
+                <td>Tên</td>
+                <td>Năm sinh</td>
+                <td>Chuyên ngành</td>
+            </tr>
+
+            <tr>
+                <td>{{student[0].ten}}</td>
+                <td>{{student[0].namsinh}}</td>
+                <td>{{student[0].chuyennganh}}</td>
+
+            </tr>
+
+
+            <tr>
+                <td>{{student[1].ten}}</td>
+                <td>{{student[1].namsinh}}</td>
+                <td>{{student[1].chuyennganh}}</td>
+
+            </tr>
+            
+
+        </table>
+   
+        <!---->
+        <h1>bảng sinh viên 2</h1>
+        <table border="1">
+            <tr>
+                <td>Tên</td>
+                <td>Năm sinh</td>
+                <td>Chuyên ngành</td>
+            </tr>
+
+            <tr>
+                <td>{{student[0].ten}}</td>
+                <td>{{student[0].namsinh}}</td>
+                <td>{{student[0].chuyennganh}}</td>
+
+            </tr>
+
+
+            <tr>
+                <td>{{student[1].ten}}</td>
+                <td>{{student[1].namsinh}}</td>
+                <td>{{student[1].chuyennganh}}</td>
+
+            </tr>
+            
+
+        </table>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

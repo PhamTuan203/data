@@ -1,0 +1,24 @@
+{
+  "posts": [
+    {
+      "id": "slBXF0B",
+      "tieu_de": "Hôm nay ăn gì",
+      "noi_dung": "gặp gỡ nhiều master cheef",
+      "tac_gia": "TUấn",
+      "the_loai": "Tin tức",
+      "ngay_dang": "12/23/2023"
+    },
+    {
+      "id": "ca2DgIM",
+      "tieu_de": "THông tin thế giới hôm nayy",
+      "noi_dung": "điểm tuần thông tin thế giớii",
+      "tac_gia": "Phạm Anh Tuấnn",
+      "the_loai": "Tin tức",
+      "ngay_dang": "16/23/2023"
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

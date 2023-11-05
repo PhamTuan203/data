@@ -1,0 +1,61 @@
+<div>
+    <div class="container">
+        <div class="card">
+            <div class="card-header  bg-primary">
+                <h4 class="text-white fw-bold">CHI TIẾT BÀI VIẾT</h4>
+            </div>
+
+            <body>
+                <form class="p-3 fw-bold" name="checkForm">
+
+                    <label for="">Tiêu đề</label>
+                    <input type="text" class="form-control" name="tieude" ng-model="newPost.tieu_de" required disabled>
+
+                    <br>
+
+
+                    <label for="">Nội dung</label>
+                    <textarea type="text" class="form-control" name="textarea" ng-model="newPost.noi_dung" required
+                        disabled></textarea>
+
+                    <br>
+
+
+                    <label for="">Tác giả</label>
+                    <input type="text" class="form-control" name="tacgia" ng-model="newPost.tac_gia" required disabled>
+
+                    <br>
+
+
+                    <label for="">Thể lại</label>
+                    <br>
+                    <select name="theloai" id="" ng-model="newPost.the_loai" disabled>
+                        <option value="Tin tức">Tin tức</option>
+                        <option value="Truyện ngắn">Truyện ngắn</option>
+                        <option value="Tiểu thuyết">Tiểu thuyết</option>
+                    </select>
+
+                    <br>
+                    <br>
+
+
+                    <label for="">Ngày đăng</label>
+                    <input type="datetime" class="form-control" name="ngaydang" ng-model="newPost.ngay_dang" required
+                        placeholder="dd/MM/yyyy" disabled>
+
+                    <div class="text-center p-3 ">
+                        <a href="#!/list-posts">
+                            <button ng-click="" class=" btn btn-outline-danger ">
+                                Quay lại</button>
+                        </a>
+                        <a href="#!/edit/post/{{newPost.id}}">
+                            <button ng-click="" class="p-2 border-0 rounded-3 btn btn-danger text-white">
+                                Chỉnh sửa</button>
+                        </a>
+                    </div>
+                </form>
+            </body>
+        </div>
+
+    </div>
+</div>

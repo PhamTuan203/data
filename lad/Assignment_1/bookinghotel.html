@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="bookinghotel.css" />
+    <script src="libs/angular.min.js"></script>
+    <script src="libs/angular-route.min.js"></script>
+    <title>Document</title>
+  </head>
+
+  <body ng-app="AppRoute">
+    <div class="container-fluid">
+      <header>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-1">
+              <img src="image/logo.svg" alt="" />
+            </div>
+
+            <div class="col-md-8">
+              <ul class="nav">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-black"
+                    data-bs-toggle="dropdown"
+                  >
+                    <i class="bi bi-file-arrow-down"></i> Tải ứng dụng</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href=""
+                        >Quét mã QR để tải xuống</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href=""
+                        >Quét mã QR để tải xuống</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href=""
+                        >Quét mã QR để tải xuống</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    ><i class="bi bi-building-fill-add"></i> Hợp tác với chúng
+                    tôi</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    ><i class="bi bi-bookmark-check"></i> Đã lưu</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-black" href="#"
+                    ><i class="bi bi-journal-check"></i> Đặt trỗ của tôi</a
+                  >
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                    <img src="image/image_vn.png" class="vn" alt="" />VND</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item text-black">VND</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-3 mt-1">
+              <button class="bg-white border-0">
+                <i class="bi bi-person-circle"></i> Đăng nhập
+              </button>
+              <button class="rounded-1 p-1 bg-dk">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!---->
+      <div class="container-fluid bg-light">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a
+                  class="nav-link active title"
+                  aria-current="page"
+                  href="#!/trang-chu"
+                  >Trang chủ</a
+                >
+                <a class="nav-link" href="#!/dat-phong">Đặt phòng</a>
+                <a class="nav-link" href="#!/lien-he">Liên hệ</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="mt-2">
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="0"
+              class="active"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#demo"
+              data-bs-slide-to="2"
+            ></button>
+          </div>
+
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="image/banner3.webp"
+                alt="Los Angeles"
+                class="d-block w-100 banner"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/banner4.webp"
+                alt="Chicago"
+                class="d-block w-100 banner"
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="image/banner5.webp"
+                alt="New York"
+                class="d-block w-100 banner"
+              />
+            </div>
+          </div>
+
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+
+      <main></main>
+      <div ng-view></div>
+      <footer class="bg-black mt-4">
+        <div class="row">
+          <div class="col-md-4">
+            <p class="footer">Về Traveloka</p>
+            <div class="footer2">
+              <p>Cách đặt chỗ</p>
+              <p>Liên hệ chúng tôi</p>
+              <p>Trợ giúp</p>
+              <p>Tuyển dụng</p>
+              <p>Về chúng tôi</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <p class="footer">Sản phẩm</p>
+            <div class="footer2">
+              <p>Vé máy bay</p>
+              <p>Khách sạn</p>
+              <p>Combo tiết kiệm</p>
+              <p>Xperience</p>
+              <p>Car Rental</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <p class="footer">Khác</p>
+            <div class="footer2">
+              <p>Traveloka Affiliate</p>
+              <p>Traveloka Blog</p>
+              <p>Chính sách quyền riêng tư</p>
+              <p>Điều khoản & Điều kiện</p>
+              <p>Quy chế hoạt động</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="controller/LienHeController.js"></script>
+  <script src="controller/DatPhongController.js"></script>
+  <script>
+    let myApp = angular.module("AppRoute", ["ngRoute"]);
+    myApp.config(function ($routeProvider) {
+      $routeProvider
+        .when("/trang-chu", {
+          templateUrl: "views/trangchu.html",
+        })
+        .when("/lien-he", {
+          templateUrl: "views/lienhe.html",
+          controller: LienHeController,
+        })
+        .when("/dat-phong", {
+          templateUrl: "views/datphong.html",
+          controller: DatPhongController,
+        });
+    });
+  </script>
+</html>

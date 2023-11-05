@@ -1,0 +1,41 @@
+<div class="container p-5">
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h4 class="text-white">Add Students</h4>
+        </div>
+
+        <body>
+            <form class="p-2" name="formCheck">
+                <label class="fw-bold">Name</label>
+                <input type="text" class="form-control" name="name" ng-model="newStudents.name" required>
+                <div class="text-danger" ng-show="formCheck.name.$error.required">
+                    Chưa nhập Tên
+                </div>
+
+
+                <label class="fw-bold" for="">Year</label>
+                <input type="text" class="form-control" name="year" ng-model="newStudents.year" required>
+                <div class="text-danger" ng-show="formCheck.year.$error.required">
+                    Chưa nhập năm sinh
+                </div>
+
+
+                <label class="fw-bold" for="">Couse</label>
+                <input type="text" class="form-control" name="couse" ng-model="newStudents.couse" required>
+                <div class="text-danger" ng-show="formCheck.couse.$error.required">
+                    Chưa nhập chuyên nghành
+                </div>
+
+                <div class="text-center p-3">
+                    <a href="#!/trang-chu">
+                        <button class="btn btn-outline-danger">Back</button>
+                    </a>
+                    <button ng-click="updateStudents()" class="btn btn-success">Update</button>
+
+                </div>
+            </form>
+        </body>
+
+
+    </div>
+</div>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="libs/angular.min.js"></script>
+    <script src="js/buoi6.js"></script>
+
+</head>
+
+<body ng-app="Buoi6">
+
+    <div ng-controller="myController">
+        <table border="1">
+            <tr>
+                <td>Tên</td>
+                <td>Ngày sinh</td>
+                <td>giới tính</td>
+                <td>mức lương</td>
+
+            </tr>
+
+            <tr ng-repeat="item in nhanvien | limitTo:number">
+                <td ng-click="sayHello(item.ten)">{{item.ten | uppercase}}</td>
+                <td ng-mouseenter="fn(item.ngaysinh)">{{item.ngaysinh | date:'dd/MM/YYYY'}}</td>
+                <td>{{item.gioitinh}}</td>
+                <td>{{item.mucluong}}</td>
+            </tr>
+
+
+
+        </table>
+        <!-- -->
+
+
+        <select ng-model="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+
+        <!--click-->
+        <button class="btn btn-secondary" ng-click="sayHello('Tuấn')">Ấn</button>
+        <!--mouse center hove-->
+        <h3 ng-mouseEnter="hover()">á</h3>
+    </div>
+</body>
+
+
+</html>

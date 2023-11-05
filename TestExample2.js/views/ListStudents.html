@@ -1,0 +1,34 @@
+<div class="container-fluid p-3">
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h4 class="text-white fw-bold">LIST STUDENTS
+            </h4>
+        </div>
+
+        <body>
+            <a class="p-3" href="#!/add/students">
+                <button class="btn btn-success">+AddStudents</button>
+            </a>
+            <table class="table table-bordered">
+                <tr>
+                    <th>Name</th>
+                    <th>Year</th>
+                    <th>Couse</th>
+
+                </tr>
+                <tr ng-repeat="list in listStudents">
+                    <td>{{list.name}}</td>
+                    <td>{{list.year}}</td>
+                    <td>{{list.couse}}</td>
+                    <td>
+                        <a href="#!/detail/students/{{list.id}}">
+                            <button class="btn btn-primary text-white">Detail</button>
+                        </a>
+                        <button ng-click="deleteStudents(list.id)" class="btn btn-danger text-white">Remove</button>
+                    </td>
+                </tr>
+            </table>
+        </body>
+    </div>
+
+</div>

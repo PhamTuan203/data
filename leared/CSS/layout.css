@@ -1,0 +1,19 @@
+.bgtop1{
+    background-color:#303030 ;
+    color: #EEEEEE;
+}
+.boxcenter{
+    width: 70%;
+    margin: 0 auto;
+}
+.container2{
+    width: 1400px;
+    margin: 0 auto;
+}
+section{
+    margin: 40px auto;
+}
+.image{
+    width: 100%;
+    height: 100%;
+}

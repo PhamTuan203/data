@@ -1,0 +1,51 @@
+<div class="container p-5">
+    <div class="card">
+        <div class="card-header bg-primary">
+            <h4 class="text-white">DETAIL EMPLOYEE</h4>
+
+        </div>
+
+        <body>
+            <form class="p-4" name="formCheck">
+                <label class="fw-bold" for="">mã</label>
+                <input type="text" class="form-control" ng-model="newEmployee.ma" name="ma" disabled required>
+                <div></div>
+                <br>
+                <label class="fw-bold" for="">Họ và tên</label>
+                <input type="text" class="form-control" ng-model="newEmployee.ho_ten" name="ten" disabled required>
+                <br>
+
+                <label class="fw-bold" for="">Số điện thoại</label>
+                <input type="text" class="form-control" ng-model="newEmployee.sdt" name="sdt" disabled required>
+                <br>
+
+                <label class="fw-bold">Chức vụ</label>
+                <select name="select" ng-model="newEmployee.chuc_vu" disabled required>
+                    <option value="Trưởng phòng">Trưởng phòng</option>
+                    <option value="Nhân viên">Nhân viên</option>
+                    <option value="Giám đốc">Giám đốc</option>
+
+                </select>
+                <br>
+
+                <br>
+
+                <label class="fw-bold" fo>Ngày sinh</label>
+                <input type="date" class="form-control" ng-model="newEmployee.ngay_sinh" name="ngaysinh" disabled
+                    required>
+
+
+                <div class="text-center p-5">
+                    <a href="#!/list-employee">
+                        <button class="btn btn-outline-danger">quay lại</button>
+                    </a>
+                    <a href="#!/update/employee/{{newEmployee.id}}">
+                        <button ng-click="()" class="btn btn-danger">Sửa</button>
+
+                    </a>
+                </div>
+
+            </form>
+        </body>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+.row ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 0px 10px;
+}
+.row ul{
+    margin: 10px auto;
+}
+
+
+.row ul li a{
+  color: whitesmoke;
+  transition: 1s;
+
+}
+.row ul li a:hover{
+  color: white;
+  font-size: 0.8vw;
+}

@@ -1,0 +1,59 @@
+body {
+        background-image: url(bg-register.jpg);
+        line-height: 2;
+}
+
+input {
+
+        width: 50%;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 1px 1px 1px 1px #AAA;
+
+}
+
+select {
+        width: 50%;
+        border: 1px solid;
+        padding: 10px;
+        box-shadow: 1px 1px 1px 1px #AAA;
+}
+
+.muc {
+        color: #2e3192;
+
+}
+
+.bangtotnghiep {
+        width: 600px;
+        height: 184px;
+        object-fit: cover
+}
+
+footer button {
+        border: 1px solid;
+        border-radius: 5px;
+        background: #111;
+        color: #fff;
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 1;
+        padding: 1.5rem 2rem;
+        cursor: pointer;
+
+
+}
+
+footer button:hover {
+        background-color: #fff;
+        color: #111;
+        transition: .6s;
+
+}
+
+
+
+
+.bi {
+        color: #F26522;
+}
