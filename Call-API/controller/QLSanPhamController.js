@@ -1,3 +1,3 @@
 window.QLSanPhamController = function ($scope) {
-  $scope.title = "Đây là quản lý sản phẩm";
+  $scope.title = "Đây là quản lý sản phẩmmmmm";
 };
